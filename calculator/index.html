@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple Calculator</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+	</head>
+	<body class="bg-secondary">
+		<div class="container mt-5 d-flex flex-column justify-content-center">
+			<div class="shadow mx-auto w-50 px-4 py-5 bg-white rounded">
+				<h2 class="mb-4 text-center">Simple Calculator</h2>
+				<div>
+					<input
+						id="num1"
+						class="form-control mb-2"
+						placeholder="Enter first number"
+					/>
+
+					<input
+						id="num2"
+						class="form-control mb-2"
+						placeholder="Enter second number"
+					/>
+
+					<select id="operator" class="form-control mb-2">
+						<option value="add">Add (+)</option>
+						<option value="subtract">Subtract (-)</option>
+						<option value="multiply">Multiply (*)</option>
+						<option value="divide">Divide (/)</option>
+					</select>
+
+					<button
+						id="calculateBtn"
+						class="btn btn-primary btn-block mb-2"
+					>
+						Calculate
+					</button>
+				</div>
+				<div class="row">
+					<div class="col-md-6 offset-md-3">
+						<div id="result" class="text-center"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
